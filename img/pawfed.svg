@@ -1,0 +1,84 @@
+<svg width="400" height="400" viewBox="20 -10 360 360" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<clipPath id="clip-heart">
+<path d="M0,35 C0,35 -75,-10 -75,-48 C-75,-78 -48,-90 -23,-82 C-8,-77 0,-62 0,-62 C0,-62 8,-77 23,-82 C48,-90 75,-78 75,-48 C75,-10 0,35 0,35 Z" transform="translate(200, 250) scale(1.5)"/>
+</clipPath>
+<clipPath id="clip-pads">
+<ellipse cx="-80" cy="-100" rx="22" ry="26" transform="translate(200, 250) scale(1.5) rotate(-15, -80, -100)"/>
+<ellipse cx="-28" cy="-118" rx="20" ry="25" transform="translate(200, 250) scale(1.5) rotate(-4, -28, -118)"/>
+<ellipse cx="28" cy="-118" rx="20" ry="25" transform="translate(200, 250) scale(1.5) rotate(4, 28, -118)"/>
+<ellipse cx="80" cy="-100" rx="22" ry="26" transform="translate(200, 250) scale(1.5) rotate(15, 80, -100)"/>
+</clipPath>
+</defs>
+
+<!-- Lines in gap (intermediate color) -->
+<g transform="translate(200, 250) scale(1.5)">
+<line x1="0" y1="-20" x2="-80" y2="-100" stroke="#5DCAA5" stroke-width="2"/>
+<line x1="0" y1="-20" x2="-28" y2="-118" stroke="#5DCAA5" stroke-width="2"/>
+<line x1="0" y1="-20" x2="28" y2="-118" stroke="#5DCAA5" stroke-width="2"/>
+<line x1="0" y1="-20" x2="80" y2="-100" stroke="#5DCAA5" stroke-width="2"/>
+<line x1="-80" y1="-100" x2="-28" y2="-118" stroke="#5DCAA5" stroke-width="1"/>
+<line x1="-28" y1="-118" x2="28" y2="-118" stroke="#5DCAA5" stroke-width="1"/>
+<line x1="28" y1="-118" x2="80" y2="-100" stroke="#5DCAA5" stroke-width="1"/>
+<line x1="-80" y1="-100" x2="80" y2="-100" stroke="#5DCAA5" stroke-width="0.8"/>
+</g>
+
+<!-- Heart -->
+<g transform="translate(200, 250) scale(1.5)">
+<path d="M0,35 C0,35 -75,-10 -75,-48 C-75,-78 -48,-90 -23,-82 C-8,-77 0,-62 0,-62 C0,-62 8,-77 23,-82 C48,-90 75,-78 75,-48 C75,-10 0,35 0,35 Z" fill="#0F6E56"/>
+</g>
+
+<!-- Pads -->
+<g transform="translate(200, 250) scale(1.5)">
+<ellipse cx="-80" cy="-100" rx="22" ry="26" fill="#1D9E75" transform="rotate(-15, -80, -100)"/>
+<ellipse cx="-28" cy="-118" rx="20" ry="25" fill="#1D9E75" transform="rotate(-4, -28, -118)"/>
+<ellipse cx="28" cy="-118" rx="20" ry="25" fill="#1D9E75" transform="rotate(4, 28, -118)"/>
+<ellipse cx="80" cy="-100" rx="22" ry="26" fill="#1D9E75" transform="rotate(15, 80, -100)"/>
+</g>
+
+<!-- Lines pad color on heart -->
+<g clip-path="url(#clip-heart)">
+<g transform="translate(200, 250) scale(1.5)">
+<line x1="0" y1="-20" x2="-80" y2="-100" stroke="#1D9E75" stroke-width="2"/>
+<line x1="0" y1="-20" x2="-28" y2="-118" stroke="#1D9E75" stroke-width="2"/>
+<line x1="0" y1="-20" x2="28" y2="-118" stroke="#1D9E75" stroke-width="2"/>
+<line x1="0" y1="-20" x2="80" y2="-100" stroke="#1D9E75" stroke-width="2"/>
+<line x1="-80" y1="-100" x2="-28" y2="-118" stroke="#1D9E75" stroke-width="1"/>
+<line x1="-28" y1="-118" x2="28" y2="-118" stroke="#1D9E75" stroke-width="1"/>
+<line x1="28" y1="-118" x2="80" y2="-100" stroke="#1D9E75" stroke-width="1"/>
+<line x1="-80" y1="-100" x2="80" y2="-100" stroke="#1D9E75" stroke-width="0.8"/>
+</g>
+</g>
+
+<!-- Lines heart color on pads -->
+<g clip-path="url(#clip-pads)">
+<g transform="translate(200, 250) scale(1.5)">
+<line x1="0" y1="-20" x2="-80" y2="-100" stroke="#0F6E56" stroke-width="2"/>
+<line x1="0" y1="-20" x2="-28" y2="-118" stroke="#0F6E56" stroke-width="2"/>
+<line x1="0" y1="-20" x2="28" y2="-118" stroke="#0F6E56" stroke-width="2"/>
+<line x1="0" y1="-20" x2="80" y2="-100" stroke="#0F6E56" stroke-width="2"/>
+<line x1="-80" y1="-100" x2="-28" y2="-118" stroke="#0F6E56" stroke-width="1"/>
+<line x1="-28" y1="-118" x2="28" y2="-118" stroke="#0F6E56" stroke-width="1"/>
+<line x1="28" y1="-118" x2="80" y2="-100" stroke="#0F6E56" stroke-width="1"/>
+<line x1="-80" y1="-100" x2="80" y2="-100" stroke="#0F6E56" stroke-width="0.8"/>
+</g>
+</g>
+
+<!-- Dot on heart = pad color -->
+<g clip-path="url(#clip-heart)">
+<g transform="translate(200, 250) scale(1.5)">
+<circle cx="0" cy="-20" r="5" fill="#1D9E75"/>
+</g>
+</g>
+
+<!-- Dots on pads = heart color -->
+<g clip-path="url(#clip-pads)">
+<g transform="translate(200, 250) scale(1.5)">
+<circle cx="-80" cy="-100" r="5" fill="#0F6E56"/>
+<circle cx="-28" cy="-118" r="5" fill="#0F6E56"/>
+<circle cx="28" cy="-118" r="5" fill="#0F6E56"/>
+<circle cx="80" cy="-100" r="5" fill="#0F6E56"/>
+</g>
+</g>
+
+</svg>
