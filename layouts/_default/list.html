@@ -1,0 +1,72 @@
+{{ define "main" }}
+  <div class="page-header">
+    <h1>{{ .Title }}</h1>
+  </div>
+
+  {{ if eq .Section "apps" }}
+    <div class="projects-list">
+      {{ range .Pages }}
+        <div class="project-card md3-card">
+          <div class="project-card-header">
+            {{ with .Params.logo }}
+              <img src="{{ . }}" alt="{{ $.Title }} logo" class="project-card-logo">
+            {{ end }}
+            <div class="project-card-info">
+              <a href="{{ .RelPermalink }}" class="project-card-title">{{ .Title }}</a>
+              {{ with .Params.platform }}<span class="project-card-platform">{{ . }}</span>{{ end }}
+            </div>
+          </div>
+          <p class="project-card-desc">{{ .Description }}</p>
+          <div class="project-card-actions">
+            {{ with .Params.website }}
+              <a href="{{ . }}" class="md3-button" target="_blank" rel="noopener">
+                <span class="material-icons">language</span>
+                <span>Website</span>
+              </a>
+            {{ end }}
+            {{ with .Params.fdroid }}
+              <a href="{{ . }}" class="md3-button" target="_blank" rel="noopener">
+                <span class="material-icons">android</span>
+                <span>F-Droid</span>
+              </a>
+            {{ end }}
+            {{ with .Params.playstore }}
+              <a href="{{ . }}" class="md3-button" target="_blank" rel="noopener">
+                <span class="material-icons">shop</span>
+                <span>Google Play</span>
+              </a>
+            {{ end }}
+            {{ with .Params.repo }}
+              <a href="{{ . }}" class="md3-button outlined" target="_blank" rel="noopener">
+                <span class="material-icons">code</span>
+                <span>Source</span>
+              </a>
+            {{ end }}
+            <a href="{{ .RelPermalink }}" class="md3-button text">
+              <span class="material-icons">arrow_forward</span>
+              <span>Details</span>
+            </a>
+          </div>
+        </div>
+      {{ end }}
+    </div>
+  {{ else }}
+    <div class="post-list">
+      {{ range .Pages }}
+        <a href="{{ .RelPermalink }}" class="post-item md3-card">
+          <h3>{{ .Title }}</h3>
+          <div class="post-meta">
+            <span class="material-icons">calendar_today</span>
+            <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+            {{ with .Params.tags }}
+              {{ range . }}
+                <span class="badge info">{{ . }}</span>
+              {{ end }}
+            {{ end }}
+          </div>
+          {{ with .Summary }}<p>{{ . }}</p>{{ end }}
+        </a>
+      {{ end }}
+    </div>
+  {{ end }}
+{{ end }}

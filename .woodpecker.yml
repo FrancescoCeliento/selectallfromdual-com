@@ -1,0 +1,35 @@
+clone:
+  git:
+    image: woodpeckerci/plugin-git
+    settings:
+      recursive: true
+
+pipeline:
+  build:
+    image: alpine:3.19
+    commands:
+      - apk add hugo
+      - hugo --minify
+    when:
+      event: [ pull_request, push ]
+
+  publish:
+    image: bitnami/git
+    secrets: [ mail, codeberg_token ]
+    environment:
+      - HUGO_OUTPUT=public
+    commands:
+      - git config --global user.email $MAIL
+      - git config --global user.name "Woodpecker CI"
+      - git clone -b pages https://$CODEBERG_TOKEN@codeberg.org/$CI_REPO.git $CI_REPO_NAME
+      - cp -ar $HUGO_OUTPUT/. $CI_REPO_NAME/
+      - cp .domains $CI_REPO_NAME || true
+      - cd $CI_REPO_NAME
+      - git add .
+      - git commit -m "Woodpecker CI ${CI_BUILD_CREATED}"
+      - git push
+    when:
+      event: push
+
+branches:
+  exclude: [ pages ]
