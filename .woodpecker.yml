@@ -1,10 +1,8 @@
-clone:
-  git:
-    image: woodpeckerci/plugin-git
-    settings:
-      recursive: true
+when:
+  branch:
+    exclude: [ pages ]
 
-pipeline:
+steps:
   build:
     image: alpine:3.19
     commands:
@@ -30,6 +28,3 @@ pipeline:
       - git push
     when:
       event: push
-
-branches:
-  exclude: [ pages ]
