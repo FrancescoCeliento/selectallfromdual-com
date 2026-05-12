@@ -1,22 +1,13 @@
 ---
-title: "About"
-description: "About tom79 - Thomas Schneider"
+title: "About us"
+description: "Chi siamo e cosa ci facciamo qui."
 ---
 
-## Who I am
+## Mission
+Dummy-X ha lo scopo di condividere interessi, idee, progetti, e soluzioni informatiche. Noi non vendiamo prodotti, ci limitiamo solo a descrivere le tecnologie e a mettere a disposizione gli strumenti adatti per poter realizzare le idee. Tutto ciò che troverete qui è tutto frutto della nostra esperienza lavorativa, e della nostra voglia di imparare.
 
-I'm Thomas, tom79 on [Codeberg](https://codeberg.org/tom79). For several years, I have been building open source apps, from Fediverse clients to privacy tools and media casting.
+## Team
+Il team è formato da 
 
-All my projects are released under open source licenses (GPL v3 / AGPL-3.0).
-
-## What drives me
-
-- **Decentralization**: federated networks where users keep their data
-- **Privacy**: no tracking, no data collection
-- **Open Source**: all code is free and auditable
-- **Accessibility**: the Fediverse should be easy to use
-
-## Links
-
-- Fediverse: [@apps@toot.fedilab.app](https://toot.fedilab.app/@apps), [@HolosSocial@mastodon.social](https://mastodon.social/@HolosSocial)
-- Support: [tom79.dev/support](/support/)
+- **Francesco Celiento** ([Web](https://www.francescoceliento.com)): Fondatore, sviluppatore, blogger
+- **Flavius Florin Harabor** ([Web](https://2088.it)): Specialista SEO, esperto Telegram, formatore, relatore

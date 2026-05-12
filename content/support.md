@@ -1,72 +1,67 @@
 ---
 title: "Support my work"
-description: "Help fund open source development for the Fediverse"
+description: "Contribuisci a finanziare il blog e i nostri sviluppi"
 ---
 
-All my projects are free and open source, with no ads, no trackers, and no paid features. Your support helps keep it that way.
+Il nostro lavoro è consultabile gratuitamente ma comporta comunque delle spese a nostro carico, ed ogni minimo aiuto sarà enormemente apprezzato. Non abbiamo sponsor diretti e partnership, ci siamo affidati al circuito di Google Adsense (che potete tranquillamente eludere utilizzando qualsiasi plugin adblocker).
 
-## What your support funds
-
-- **Development time**: building features, fixing bugs, and maintaining all projects
-- **Infrastructure**: servers, domains, and hosting
-- **Hardware**: the devices I develop and test on
-- **Coffee**: the real engine behind it all
+Se ciò che proponiamo è di vostro gradimento, vi chiediamo un supporto.
 
 ## How to contribute
+Potete supportarci nei seguenti modi differenti
 
 <div class="support-cards">
   <div class="support-card md3-card">
-    <span class="support-card-logo" style="--logo: url(/img/liberapay.svg)"></span>
+    <span class="material-icons support-card-icon">payments</span>
     <h3>Liberapay</h3>
-    <p>Recurring donations with no platform fees. The most direct way to support ongoing development.</p>
-    <a href="https://liberapay.com/tom79" class="md3-button" target="_blank" rel="noopener">
+    <p>Donazioni ricorrenti senza commissioni di piattaforma. Il modo più diretto per supportare lo sviluppo continuo.</p>
+    <a href="https://liberapay.com/selectallfromdual" class="md3-button" target="_blank" rel="noopener">
       <span class="material-icons">open_in_new</span>
       <span>Donate on Liberapay</span>
     </a>
   </div>
 
   <div class="support-card md3-card">
-    <span class="support-card-logo" style="--logo: url(/img/paypal.svg)"></span>
+    <span class="material-icons support-card-icon">payments</span>
     <h3>PayPal</h3>
-    <p>One-time or recurring. A quick and familiar option.</p>
-    <a href="https://www.paypal.com/paypalme/Mastalab" class="md3-button" target="_blank" rel="noopener">
+    <p>Una tantum o ricorrente. Un'opzione rapida e familiare.</p>
+    <a href="https://www.paypal.com/paypalme/francescoceliento" class="md3-button outlined" target="_blank" rel="noopener">
       <span class="material-icons">open_in_new</span>
       <span>Donate via PayPal</span>
     </a>
   </div>
 
   <div class="support-card md3-card">
+    <span class="material-icons support-card-icon">local_cafe</span>
+    <h3>Ko-Fi</h3>
+    <p>Una tantum o ricorrente. Un'opzione rapida e familiare.</p>
+    <a href="https://ko-fi.com/selectallfromdual" class="md3-button outlined" target="_blank" rel="noopener">
+      <span class="material-icons">open_in_new</span>
+      <span>Donate via Ko-Fi</span>
+    </a>
+  </div>
+
+  <div class="support-card md3-card">
     <span class="material-icons support-card-icon">currency_bitcoin</span>
     <h3>Bitcoin</h3>
-    <p>For privacy-conscious supporters. No intermediary.</p>
-    <code class="btc-address">3JDoJV7qf8fcmrUeYbT7hrH91PUQpg8HhS</code>
-    <button class="md3-button outlined" onclick="navigator.clipboard.writeText('3JDoJV7qf8fcmrUeYbT7hrH91PUQpg8HhS');this.querySelector('.btn-label').textContent='Copied!'">
+    <p>Per i sostenitori della privacy. Nessun intermediario.</p>
+    <code class="btc-address">3KUTcQrhvnCzoQHLcSqXesjAGD3G8ofQmL</code>
+    <button class="md3-button outlined" onclick="navigator.clipboard.writeText('3KUTcQrhvnCzoQHLcSqXesjAGD3G8ofQmL');this.querySelector('.btn-label').textContent='Copied!'">
       <span class="material-icons">content_copy</span>
       <span class="btn-label">Copy address</span>
     </button>
   </div>
 
   <div class="support-card md3-card">
-    <span class="material-icons support-card-icon">code</span>
-    <h3>Contribute code</h3>
-    <p>Found a bug? Have an idea? Code contributions, translations, and documentation are always welcome.</p>
-    <a href="https://codeberg.org/tom79" class="md3-button outlined" target="_blank" rel="noopener">
+    <span class="material-icons support-card-icon">shopping_bag</span>
+    <h3>Amazon</h3>
+    <p>Completa i tuoi acquisti su Amazon tramite il nostro link, e supporterai il progetto senza costi aggiuntivi.</p>
+    <a href="https://www.amazon.it?&linkCode=ll2&tag=francelithewe-21&linkId=2801a7fda52b2ed91570da8c8df19dbc&ref_=as_li_ss_tl" class="md3-button outlined" target="_blank" rel="sponsored nofollow">
       <span class="material-icons">open_in_new</span>
-      <span>Codeberg</span>
-    </a>
-  </div>
-
-  <div class="support-card md3-card">
-    <span class="material-icons support-card-icon">share</span>
-    <h3>Spread the word</h3>
-    <p>Talk about these projects, share them with friends, or write about your experience.</p>
-    <a href="https://toot.fedilab.app/@apps" class="md3-button outlined" target="_blank" rel="noopener">
-      <span class="material-icons">open_in_new</span>
-      <span>Follow on Fediverse</span>
+      <span>Buy on Amazon</span>
     </a>
   </div>
 </div>
 
-## Thank you
-
-Every contribution counts, whether it's a donation, a pull request, or just telling a friend. Thank you for being part of this.
+## Thank You!
+Un ringraziamento, qualsiasi sia la vostra decisione.
